@@ -19,28 +19,27 @@
 	</description>
 
 	<!-- Ticket Registry -->
-	<!-- <bean id="ticketRegistry" class="org.jasig.cas.ticket.registry.DefaultTicketRegistry" 
-		/> -->
+	<bean id="ticketRegistry" class="org.jasig.cas.ticket.registry.DefaultTicketRegistry" /> 
 
-
+	<!-- 
 	<bean id="ticketRegistry" class="org.jasig.cas.ticket.registry.RedisTicketRegistry">
 		<constructor-arg index="0" ref="redisTemplate" />
 
-		<!-- TGT timeout in seconds -->
+		<!-- TGT timeout in seconds --!>
 		<constructor-arg index="1" value="3600" />
 
-		<!-- ST timeout in seconds -->
+		<!-- ST timeout in seconds --!>
 		<constructor-arg index="2" value="300" />
 	</bean>
 
 	<bean id="jedisConnFactory"
 		class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
-		p:hostName="localhost" p:database="3" p:usePool="true" p:password="a644a38a077f4a41a6bc4dea38699332" />
+		p:hostName="localhost" p:database="3" p:usePool="true" p:password="redispass" />
 
 	<bean id="redisTemplate" class="org.jasig.cas.ticket.registry.TicketRedisTemplate"
 		p:connectionFactory-ref="jedisConnFactory" />
-
-
+ 	-->
+ 
 	<!--Quartz -->
 	<!-- TICKET REGISTRY CLEANER -->
 	<bean id="ticketRegistryCleaner"
