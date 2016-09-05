@@ -25,10 +25,10 @@
 	<bean id="ticketRegistry" class="org.jasig.cas.ticket.registry.RedisTicketRegistry">
 		<constructor-arg index="0" ref="redisTemplate" />
 
-		<!-- TGT timeout in seconds --!>
+		<!## TGT timeout in seconds ##>
 		<constructor-arg index="1" value="3600" />
 
-		<!-- ST timeout in seconds --!>
+		<!## ST timeout in seconds ##>
 		<constructor-arg index="2" value="300" />
 	</bean>
 
